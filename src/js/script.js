@@ -22,7 +22,11 @@ form.addEventListener("submit", function(event){
     meusCursos.forEach(curso => {
         var minhaLi = document.createElement("li")
 
-        minhaLi.innerText = curso
+        minhaLi.innerText = curso.nome
+
+        var lista = document.getElementById("minha-lista")
+
+        lista.appendChild(minhaLi)
     })
 
 
